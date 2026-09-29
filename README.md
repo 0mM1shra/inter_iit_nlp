@@ -21,6 +21,48 @@ This repository implements **`ACT-TREE 360`** (*Actor-Critic Blackboard Swarm wi
 
 ---
 
+## 🖥️ Terminal Dashboard & Execution Visualization (PS Section 7.2 Frontend Expectations)
+
+In accordance with Section 7.2 of the Problem Statement (*"No flashy frontend is expected or rewarded. What is expected is a bare-minimum, working way to actually see the system doing its job—the influx of data arriving, agents acting on it, and the system arriving at (and explaining) its final decisions"*), running `python run_pipeline.py` launches an interactive, real-time terminal visualizer dashboard:
+
+```text
+========================================================================
+               ACT-TREE 360 STREAM PROCESSOR: scenario_01               
+========================================================================
+👤 Customer Profile: Marcus Vance (CUST_00042) | Segment: Standard
+📦 Loaded Stream Events: 375 Seed Events | 116 Live Stream Events
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 🕒 CHECKPOINT #3 [AS-OF TIME: 2026-03-26T00:00:00Z]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📥 Stream Influx (45-Day Window): 43 Txns | 1 Support Logs | 31 Logins | 0 KYC Updates
+🐝 Swarm Assertions Published to State Board:
+   • login_frequency_trend           : val=0.0        | conf=0.5
+   • support_sentiment_score         : val=-0.5       | conf=0.8
+   • hospital_bill_posted            : val=True       | conf=0.95
+   • red_herring_tuition_wire        : val=True       | conf=0.76
+   • search_intent_hardship          : val=True       | conf=0.95
+   • medical_support_ticket          : val=True       | conf=0.98
+⚔️ Actor-Critic Debate Audit: State -> medical_hardship | Conf -> high
+🎯 Final Decision: Action -> support_intervention (medical_hardship_payment_plan)
+🚦 HITL Checkpoint: ESCALATED
+💡 Citation Explanation: Medical hardship confirmed. Recommending medical hardship payment plan support intervention.
+
+✅ Inferred events file written to: customer_360_dataset/scenario_01/inferred_events.json
+==================================================
+ FINAL SCORE: 110.0 / 110.0 (100.0%)
+==================================================
+```
+
+### What Reviewers Observe During Execution:
+1. **Data Stream Influx**: Live multi-source telemetry arriving in event-time order.
+2. **Swarm Agent Activity**: `UsageAgent`, `SupportAgent`, `TransactionAgent`, and `KYCAgent` executing tools and publishing structured epistemic assertions to the customer's `SharedStateBoard`.
+3. **Actor-Critic Debate Audit**: Contradictions and red-herring transfers (tuition wires, vacation refunds, tax deposits) explicitly audited.
+4. **Final Decision & HITL Status**: Bounded intervention decision, confidence band, and HITL status (`AUTO_APPROVED` / `ESCALATED`).
+5. **Citation-Backed Explanation**: Instant justification linking exact signal events and policy nodes.
+
+---
+
 ## 🎯 Deliverables Satisfaction & PS Requirement Mapping
 
 Every deliverable required in Sections 7 and 8 of the Problem Statement PDF is explicitly satisfied by dedicated components in this repository:
