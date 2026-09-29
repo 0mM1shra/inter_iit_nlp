@@ -1,4 +1,4 @@
-# End-Term Solution Document (3 Pages)
+# End-Term Solution Document
 **Project**: Agentic Customer 360 — Proactive Intervention Desk  
 **Framework**: `ACT-TREE 360` (Actor-Critic Blackboard Swarm with Dynamic Life-Phase Hypothesis Trees)  
 **Track**: Natural Language Processing (NLP) — Inter IIT Tech Meet 15.0  
@@ -6,8 +6,7 @@
 
 ---
 
-<!-- PAGE 1 BREAK -->
-## PAGE 1: Problem Overview, Domain Insights & Core Paradigm
+## 1. Problem Overview, Domain Insights & Core Paradigm
 
 ### 1.1 Enterprise Problem Context
 "Customer 360" has long been the holy grail of enterprise banking architecture: aggregating a single, unified view of a customer's footprint across accounts, transactions, support tickets, and telemetry. Traditionally, large institutions attempted this by dumping data into massive lakes and building complex CRM dashboards. However, dashboards are passive. They rely on human account managers to continuously log in and spot subtle shifts—like a high-value customer quietly building up churn risk or entering financial hardship.
@@ -26,8 +25,7 @@ To solve real-world stream noise and premature overreaction, we propose **`ACT-T
 
 ---
 
-<!-- PAGE 2 BREAK -->
-## PAGE 2: System Architecture & Multi-Agent Topologies
+## 2. System Architecture & Multi-Agent Topologies
 
 ### 2.1 Multi-Agent System (MAS) Coordination Topologies
 Rather than defaulting to a uniform topology everywhere, `ACT-TREE 360` composes distinct coordination topologies mapped to specific pipeline stages:
@@ -49,8 +47,7 @@ Stream events are ingested and sorted strictly by `event_time` using an event-ti
 
 ---
 
-<!-- PAGE 3 BREAK -->
-## PAGE 3: Benchmark Results, Non-Negotiables & Trade-Offs
+## 3. Benchmark Results, Non-Negotiables & Trade-Offs
 
 ### 3.1 Empirical Benchmark Evaluation Results
 The system was evaluated using the automated scoring harness (`evaluate_scenarios.py`) across all official practice scenarios, achieving **100% Perfect Accuracy**:
