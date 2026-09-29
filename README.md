@@ -193,7 +193,8 @@ inter_iit_nlp_mid/
 │   ├── 01_research_log.md                    # Research Log & Theoretical Grounding (30% Weight)
 │   ├── 02_system_architecture.md             # Architecture Spec & Visual Mermaid Flowcharts (20% Weight)
 │   ├── 03_solution_document.md               # 3-Page Solution Document (Hard Constraint!)
-│   └── 04_testing_and_evaluation.md          # Benchmark Evaluation Report & Failure Mode Analysis
+│   ├── 04_testing_and_evaluation.md          # Benchmark Evaluation Report & Failure Mode Analysis
+│   └── Endterm_final_report.pdf              # Compiled Comprehensive Master Report (PDF)
 ├── midterm_submission/                         # MID-TERM SUBMISSION ARCHIVE
 │   ├── MIDTERM_SUBMISSION.md                 # Mid-Term Submission Index
 │   ├── 01_preliminary_research_document.md     # Preliminary Research Document
