@@ -1,0 +1,29 @@
+[
+  {
+    "as_of_time": "2026-02-15T00:00:00Z",
+    "inferred_state": "medical_hardship",
+    "confidence_band": "low",
+    "action": "no_action",
+    "action_subtype": null,
+    "hitl_status": "auto_approved",
+    "notes": "Medical hardship inferred from ER visit, hospital billing, and income disruption. Red herrings (tuition wire/refund) audited and excluded from hardship score."
+  },
+  {
+    "as_of_time": "2026-03-12T00:00:00Z",
+    "inferred_state": "medical_hardship",
+    "confidence_band": "low",
+    "action": "no_action",
+    "action_subtype": null,
+    "hitl_status": "auto_approved",
+    "notes": "Medical hardship inferred from ER visit, hospital billing, and income disruption. Red herrings (tuition wire/refund) audited and excluded from hardship score."
+  },
+  {
+    "as_of_time": "2026-03-26T00:00:00Z",
+    "inferred_state": "medical_hardship",
+    "confidence_band": "high",
+    "action": "support_intervention",
+    "action_subtype": "medical_hardship_payment_plan",
+    "hitl_status": "escalated",
+    "notes": "Medical hardship confirmed. Recommending medical hardship payment plan support intervention."
+  }
+]
